@@ -1,0 +1,39 @@
+# Python 缓存和本地虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Depth Anything V2 本地环境
+Depth-Anything-V2/.venv/
+Depth-Anything-V2/.venv_py313_backup_*/
+Depth-Anything-V2/**/__pycache__/
+Depth-Anything-V2/**/*.py[cod]
+
+# 模型权重和转换产物通常很大，不放进 Git
+*.pth
+*.pt
+*.onnx
+*.rknn
+*.engine
+*.safetensors
+Depth-Anything-V2/metric_depth/checkpoints/
+Depth-Anything-V2/rk3588s2/models/
+
+# 推理输出、点云和调试产物
+*.npy
+*.npz
+*.ply
+*.pcd
+*.mp4
+*.avi
+*.mov
+Depth-Anything-V2/metric_depth/outputs*/
+Depth-Anything-V2/metric_depth/outputs_*/
+Depth-Anything-V2/rk3588s2_outputs/
+
+# 常见本地系统文件
+.DS_Store
+Thumbs.db
